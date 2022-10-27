@@ -33,6 +33,7 @@ const authOptions = {
   pages: {
     signIn: "/auth/signin",
   },
+  secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     jwt(params) {
       // update token
